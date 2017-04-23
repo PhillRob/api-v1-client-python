@@ -84,7 +84,7 @@ Usage:
 txs = blockexplorer.get_unconfirmed_tx()
 ```
 
-####`get_blocks`
+#### `get_blocks`
 Get a list of blocks for a specific day or mining pool. Returns an array of `SimpleBlock` objects.
 
 Params:
@@ -163,7 +163,7 @@ script_sig : str
 sequence : int
 ```
 
-Note: if coinbase transaction, then only `script` and `script_siq` will be populated.
+Note: if coinbase transaction, then only `script` and `script_sig` will be populated.
 
 #### `Output`
 
