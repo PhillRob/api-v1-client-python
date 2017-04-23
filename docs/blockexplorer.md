@@ -1,11 +1,11 @@
-##`blockexplorer` module
+## `blockexplorer` module
 All functions support an optional parameter called `api_code`. It won't be listed with every function description.
 
-####`get_block`
+#### `get_block`
 Get a single block based on a block index or hash. Returns a `Block` object.
 
 Params: 
-```
+```python
 block_id : str - block index or hash
 ```
 
@@ -16,11 +16,11 @@ from blockchain import blockexplorer
 block = blockexplorer.get_block('000000000000000016f9a2c3e0f4c1245ff24856a79c34806969f5084f410680')
 ```
 
-####`get_tx`
+#### `get_tx`
 Get a single transaction based on a transaction index or hash. Returns a `Transaction` object.
 
 Params:
-```
+```python
 tx_id : str - transaction index or hash
 ```
 
@@ -29,11 +29,11 @@ Usage:
 tx = blockexplorer.get_tx('d4af240386cdacab4ca666d178afc88280b620ae308ae8d2585e9ab8fc664a94')
 ```
 
-####`get_block_height`
+#### `get_block_height`
 Get an array of blocks at the specified height. Returns an array of `Block` objects.
 
 Params:
-```
+```python
 height : int - block height
 ```
 
@@ -42,11 +42,11 @@ Usage:
 blocks = blockexplorer.get_block_height(2570)
 ```
 
-####`get_address`
+#### `get_address`
 Get a single address and its transactions. Returns an `Address` object.
 
 Params:
-```
+```python
 address : str - address in the base58 or hash160 format
 ```
 
@@ -55,7 +55,7 @@ Usage:
 address = blockexplorer.get_address('1HS9RLmKvJ7D1ZYgfPExJZQZA1DMU3DEVd')
 ```
 
-####`get_unspent_outputs`
+#### `get_unspent_outputs`
 Get an array of unspent outputs for an address. Returns an array of `UnspentOutput` objects.
 
 Params:
@@ -68,7 +68,7 @@ Usage:
 outs = blockexplorer.get_unspent_outputs('1HS9RLmKvJ7D1ZYgfPExJZQZA1DMU3DEVd')
 ```
 
-####`get_latest_block`
+#### `get_latest_block`
 Get the latest block on the main chain. Returns a `LatestBlock` object.
 
 Usage:
