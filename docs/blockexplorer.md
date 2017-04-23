@@ -5,7 +5,7 @@ All functions support an optional parameter called `api_code`. It won't be liste
 Get a single block based on a block index or hash. Returns a `Block` object.
 
 Params: 
-```python
+```
 block_id : str - block index or hash
 ```
 
@@ -20,7 +20,7 @@ block = blockexplorer.get_block('000000000000000016f9a2c3e0f4c1245ff24856a79c348
 Get a single transaction based on a transaction index or hash. Returns a `Transaction` object.
 
 Params:
-```python
+```
 tx_id : str - transaction index or hash
 ```
 
@@ -33,7 +33,7 @@ tx = blockexplorer.get_tx('d4af240386cdacab4ca666d178afc88280b620ae308ae8d2585e9
 Get an array of blocks at the specified height. Returns an array of `Block` objects.
 
 Params:
-```python
+```
 height : int - block height
 ```
 
@@ -46,7 +46,7 @@ blocks = blockexplorer.get_block_height(2570)
 Get a single address and its transactions. Returns an `Address` object.
 
 Params:
-```python
+```
 address : str - address in the base58 or hash160 format
 ```
 
@@ -59,7 +59,7 @@ address = blockexplorer.get_address('1HS9RLmKvJ7D1ZYgfPExJZQZA1DMU3DEVd')
 Get an array of unspent outputs for an address. Returns an array of `UnspentOutput` objects.
 
 Params:
-```python
+```
 address : str - address in the base58 or hash160 format
 ```
 
@@ -88,7 +88,7 @@ txs = blockexplorer.get_unconfirmed_tx()
 Get a list of blocks for a specific day or mining pool. Returns an array of `SimpleBlock` objects.
 
 Params:
-```python
+```
 time : int - unix time in ms (optional)
 pool_name : str - pool name (optional)
 ```
@@ -103,7 +103,7 @@ blocks = blockexplorer.get_blocks(pool_name = 'Discus Fish')
 Get inventory data for recent blocks and addresses (up to 1 hour old). Returns an `InventoryData` object.
 
 Params:
-```python
+```
 hash : str - tx or block hash
 ```
 
