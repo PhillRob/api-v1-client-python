@@ -57,50 +57,47 @@ Usage:
 address = blockexplorer.get_address('1HS9RLmKvJ7D1ZYgfPExJZQZA1DMU3DEVd')
 ```
 
-#### `get_xpub`
-Get a single xpub and its transactions. Returns an `Xpub` object.
+#### ~~`get_xpub`~~
+~~Get a single xpub and its transactions. Returns an `Xpub` object.~~
 
-Params:
-```
+~~Params:~~
+~~```
 xpu: str xpub to look up
 filter : FilterType - the filter for transactions selection (optional)
 limit : int - limit number of transactions to display (optional)
-offset : int - number of transactions to skip when display (optional)```
+offset : int - number of transactions to skip when display (optional)```~~
 
-Usage:
-```python
-xpub = blockexplorer.get_xpub('xpub6CmZamQcHw2TPtbGmJNEvRgfhLwitarvzFn3fBYEEkFTqztus7W7CNbf48Kxuj1bRRBmZPzQocB6qar9ay6buVkQk73ftKE1z4tt9cPHWRn')
-```
+~~Usage:~~
+~~```python
+xpub = blockexplorer.get_xpub('xpub6CmZamQcHw2TPtbGmJNEvRgfhLwitarvzFn3fBYEEkFTqztus7W7CNbf48Kxuj1bRRBmZPzQocB6qar9ay6buVkQk73ftKE1z4tt9cPHWRn')```~~
 
 
-#### `get_multi_address`
-Get aggregate summary for multiple addresses including overall balance, per address balance
-and list of relevant transactions. Returns an `MultiAddress` object.
+#### ~~`get_multi_address`~~
+~~Get aggregate summary for multiple addresses including overall balance, per address balance
+and list of relevant transactions. Returns an `MultiAddress` object.~~
 
-Params:
-```
+~~Params:~~
+~~```
 addresses : tuple - addresses(base58 or xpub) to look up
 filter : FilterType - the filter for transactions selection (optional)
 limit : int - limit number of transactions to display (optional)
-offset : int - number of transactions to skip when display (optional)```
+offset : int - number of transactions to skip when display (optional)```~~
 
-Usage:
-```python
-addresses = blockexplorer.get_multi_address('1HS9RLmKvJ7D1ZYgfPExJZQZA1DMU3DEVd', xpub6CmZamQcHw2TPtbGmJNEvRgfhLwitarvzFn3fBYEEkFTqztus7W7CNbf48Kxuj1bRRBmZPzQocB6qar9ay6buVkQk73ftKE1z4tt9cPHWRn)
-```
+~~Usage:~~
+~~```python
+addresses = blockexplorer.get_multi_address('1HS9RLmKvJ7D1ZYgfPExJZQZA1DMU3DEVd', xpub6CmZamQcHw2TPtbGmJNEvRgfhLwitarvzFn3fBYEEkFTqztus7W7CNbf48Kxuj1bRRBmZPzQocB6qar9ay6buVkQk73ftKE1z4tt9cPHWRn)```~~
 
-####`get_balance`
-Get balances for each address provided. Returns a dictionary of str to `Balance` objects.
+#### ~~`get_balance`~~
+~~Get balances for each address provided. Returns a dictionary of str to `Balance` objects.~~
 
-Params:
-```
+~~Params:~~
+~~```
 addresses : tuple - addresses(base58 or xpub) to look up
-filter : FilterType - the filter for transactions selection (optional)
+filter : FilterType - the filter for transactions selection (optional)```~~
 
-Usage:
-```python
-addresses = blockexplorer.get_multi_address('1HS9RLmKvJ7D1ZYgfPExJZQZA1DMU3DEVd', xpub6CmZamQcHw2TPtbGmJNEvRgfhLwitarvzFn3fBYEEkFTqztus7W7CNbf48Kxuj1bRRBmZPzQocB6qar9ay6buVkQk73ftKE1z4tt9cPHWRn)
-```
+~~Usage:~~
+~~```python
+addresses = blockexplorer.get_balance('1HS9RLmKvJ7D1ZYgfPExJZQZA1DMU3DEVd', xpub6CmZamQcHw2TPtbGmJNEvRgfhLwitarvzFn3fBYEEkFTqztus7W7CNbf48Kxuj1bRRBmZPzQocB6qar9ay6buVkQk73ftKE1z4tt9cPHWRn)```~~
 
 #### `get_unspent_outputs`
 Get an array of unspent outputs for an address. Returns an array of `UnspentOutput` objects.
