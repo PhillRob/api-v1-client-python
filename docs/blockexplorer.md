@@ -221,7 +221,7 @@ final_balance : int
 transactions : array of Transaction objects
 ```
 
-####`SimpleAddress`
+#### `SimpleAddress`
 
 ```
 address : str
@@ -233,7 +233,7 @@ change_index : int
 account_index : int
 ```
 
-####`MultiAddress`
+#### `MultiAddress`
 
 ```
 n_tx : int
@@ -245,7 +245,7 @@ addresses : array of SimpleAddress objects
 transactions : array of Transaction objects
 ```
 
-####`Xpub`
+#### `Xpub`
 
 ```
 address : str
@@ -259,7 +259,7 @@ gap_limit : int
 transactions : array of Transaction objects
 ```
 
-####`Balance`
+#### `Balance`
 
 ```
 n_tx : int
